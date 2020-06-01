@@ -1,13 +1,18 @@
 .fishList {
     background-color: mediumorchid;
+    border-radius: 5px;
 }
 
 .fish {
     background-color: mediumvioletred;
+    margin: 2em 0 0 2em;
+    border-radius: 5px;
+    padding: 1em;
 }
 
 
 .fish__picture {
     max-width: 15rem;
     max-height: 15rem;
+    border-radius: 5px;
 }

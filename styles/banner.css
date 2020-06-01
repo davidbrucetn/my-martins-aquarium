@@ -1,3 +1,13 @@
 .banner {
+    display: inline-flex;
     background-color: darkgoldenrod;
+    border-radius: 5px;
+}
+
+.banner__logo {
+    max-width: 8rem;
+    max-height: 8rem;
+}
+.banner__title {
+    margin: 1em;
 }
