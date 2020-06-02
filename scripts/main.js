@@ -6,5 +6,8 @@ quoteList()
 // build fish html sections
 fishList()
 
+// build location html sections
+locationList()
+
 // build tip html sections
 tipList()
