@@ -10,7 +10,8 @@ const fishCollection = [
         food: "algae",
         species: "Guppy",
         length: "3 cm",
-        location: "Caribbean"
+        location: "Caribbean",
+        picture: "https://www.fishkeepingworld.com/wp-content/uploads/2018/02/Guppy.jpg"
 
     },
     {
@@ -18,7 +19,8 @@ const fishCollection = [
         food: "Brine Shrimp",
         species: "Angelfish",
         length: "6 inches",
-        location: "South America"
+        location: "South America",
+        picture: "https://www.fishkeepingworld.com/wp-content/uploads/2018/02/Angelfish-New.jpg"
 
     },
     {
@@ -26,7 +28,8 @@ const fishCollection = [
         food: "Bloodworms",
         species: "Neon Tetra",
         length: "3 cm",
-        location: "Amazon Basin"
+        location: "Amazon Basin",
+        picture: "https://www.fishkeepingworld.com/wp-content/uploads/2018/02/Neon-Tetra-New.jpg"
 
     },
     {
@@ -34,7 +37,8 @@ const fishCollection = [
         food: "Brine Shrimp",
         species: "Mollie",
         length: "3 inches",
-        location: "Tropical Estuaries"
+        location: "Tropical Estuaries",
+        picture: "https://www.fishkeepingworld.com/wp-content/uploads/2018/02/Black-Mollies-1.jpg"
 
     },
     {
@@ -42,7 +46,8 @@ const fishCollection = [
         food: "Fruit Flies",
         species: "Platy",
         length: "2.2 inches",
-        location: "South America"
+        location: "South America",
+        picture: "https://www.fishkeepingworld.com/wp-content/uploads/2018/02/Sunburst-Platy.jpg"
 
     },
     {
@@ -50,7 +55,8 @@ const fishCollection = [
         food: "Bloodworms",
         species: "Zebra Danios",
         length: "1.75 inches",
-        location: "Myanmar"
+        location: "Myanmar",
+        picture: "https://www.fishkeepingworld.com/wp-content/uploads/2018/02/Zebra-Danio.jpg"
 
     }
 ]
