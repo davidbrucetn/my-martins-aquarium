@@ -7,15 +7,15 @@ const quoteList = () => {
 
         //convert current quote obj to HTML
         const quoteHTML = quoteConverter(currentQuoteObj);
-        // console.log(quoteHTML);
+        
 
         //find article for quotes to insert from index.html
         const quoteArticleElement = document.querySelector(".quoteList")
-        console.log(quoteArticleElement);
+        
 
         //build concatenated HTML list of quotes from quoteCollection
         quoteArticleElement.innerHTML += quoteHTML;
-        console.log(quoteArticleElement);
+        
     }
     
 }

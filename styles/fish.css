@@ -10,9 +10,35 @@
     padding: 1em;
 }
 
+.holy {
+    border: 2px solid gold;
+    
+}
+
+.soldier {
+    background-color: lightseagreen;
+    border: 2px solid silver;
+}
+
+.common {
+    border: 2px solid black;
+    background-color: grey;
+}
 
 .fish__picture {
     max-width: 15rem;
     max-height: 15rem;
     border-radius: 5px;
+}
+
+.holy .fish__picture {
+    border: 2px solid gold;
+}
+
+.soldier .fish__picture {
+    border: 2px solid silver;
+}
+
+.common  .fish__picture {
+    border: 2px solid black;
 }
