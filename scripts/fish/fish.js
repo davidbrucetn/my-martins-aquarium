@@ -25,39 +25,19 @@ const fishConverter = (fishObject,rank) => {
     return fishHTMLRepresentation;
 }
 
-const mostHolyFish = () => {
-    const holyFish = [];
 
-    for (const mostHoly of fishCollection) {
-        if (mostHoly.length % 3 === 0 ) {
-             holyFish.push(mostHoly);
-        }
+
+const geFilterFish = (rank) => {
+    var filteredFish = [];
+    if (rank === "holy") {
+        filteredFish = fishCollection.filter(fishObj => fishObj.length % 3 === 0);
+    } else if (rank === "soldier") {
+        filteredFish = fishCollection.filter(fishObj => (fishObj.length % 5 === 0) && (fishObj.length % 3 !== 0));
+    } else {
+        filteredFish = fishCollection.filter(fishObj => (fishObj.length % 5 !== 0) && (fishObj.length % 3 !== 0));
     }
-    return holyFish
+
+    return filteredFish
 }
 
-// 5, 10, 15, 20, 25, etc... fish
-const soldierFish = () => {
-    const soldiers = [];
 
-    for (const soldier of fishCollection) {
-        if ((soldier.length % 5 === 0 ) && !(soldier.length % 3 === 0)) {
-
-            soldiers.push(soldier);
-        }
-    }
-    return soldiers
-    
-}
-
-// Any fish not a multiple of 3 or 5
-const commonFish = () => {
-    const regularFish = [];
-    for (const commoner of fishCollection) {
-        if ((commoner.length % 3 !== 0) && (commoner.length % 5 !== 0)) {
-            
-            regularFish.push(commoner);
-        }
-    }
-    return regularFish
-}

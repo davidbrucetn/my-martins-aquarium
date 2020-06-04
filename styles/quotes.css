@@ -1,10 +1,11 @@
 .quoteList {
-    background-color: lightyellow;
+    background-color: mediumturquoise;
     border-radius: 5px;
+    margin: .5vh;
 }
 
 .quote {
-    background-color: yellow;
+    background-color: aquamarine;
     margin: 1em;
     border-radius: 5px;
 }
