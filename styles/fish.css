@@ -1,6 +1,7 @@
 .fishList {
     background-color: mediumorchid;
     border-radius: 5px;
+    margin: .5vh;
 }
 
 .fish {
@@ -41,4 +42,5 @@
 
 .common  .fish__picture {
     border: 2px solid black;
+    filter: brightness(50%);
 }
