@@ -4,7 +4,15 @@
 quoteList()
 
 // build fish html sections
-fishList()
+getFishData().then(
+    () => {
+        fishList()
+        //console.log(`before ${fishCollection}`)
+    }
+)
+
+//setTimeout(console.log(`After ${fishCollection}`),10000);
+//fishList()
 
 // build location html sections
 locationList()
