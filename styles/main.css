@@ -24,6 +24,10 @@ html {
     flex-direction: row;
 }
 
+.hidden {
+    display:none;
+}
+
 .underTheBanner__left {
     display: flex;
     flex-direction: column;

@@ -6,6 +6,7 @@ quoteList()
 // build fish html sections
 getFishData().then(
     () => {
+        debugger
         fishList()
         //console.log(`before ${fishCollection}`)
     }
@@ -13,9 +14,17 @@ getFishData().then(
 
 //setTimeout(console.log(`After ${fishCollection}`),10000);
 //fishList()
-
+getLocationData().then(
+    () => {
+        locationList();
+    }
+)
 // build location html sections
-locationList()
+//locationList()
 
 // build tip html sections
-tipList()
+getTipData().then(
+    () => {
+        tipList();
+    }
+)
