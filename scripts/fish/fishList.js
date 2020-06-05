@@ -1,18 +1,38 @@
 
+leftBackground = () => {
+    const leftDiv = document.querySelector(".underTheBanner__left")
+    const locationsHidden = document.querySelector(".locationList").classList.contains("hidden")
+    const tipsHidden = document.querySelector(".tipList").classList.contains("hidden")
+    const fishListElement = document.querySelector(".fishList")
+    
+    if ((fishListElement.classList.contains("hidden") && locationsHidden === true) && (!tipsHidden))
+    {
+        leftDiv.classList.toggle("page__img__left")
+        leftDiv.style.backgroundImage = "url(../images/eod.gif)"
+    } else {
+        leftDiv.classList.toggle("page__img__left")
+        leftDiv.style.backgroundImage = ""
+    }
+}
+
 // Hide Fish Completely
 //   set button object for selector with class toggleFish
 const fishVisibilityButton = document.querySelector(".toggleFish")
 
 // Listen for click on button 
 fishVisibilityButton.addEventListener("click", clickEvent => {
+    
+    const fishListElement = document.querySelector(".fishList")
     // if clicked add class hidden and CSS will hide button because of "hidden" class
-    document.querySelector(".fishList").classList.toggle("hidden");
-    if (document.querySelector(".fishList").classList.contains("hidden")) {
-        document.querySelector(".toggleFish").innerHTML="Hide Fish"
+    fishListElement.classList.toggle("hidden");
+    if (fishListElement.classList.contains("hidden")) {
+        document.querySelector(".toggleFish").innerHTML="Show Fish"
         
     } else {
-        document.querySelector(".toggleFish").innerHTML="Show Fish"
+        document.querySelector(".toggleFish").innerHTML="Hide Fish"
+
     }
+    leftBackground();
 })
 
 
@@ -70,6 +90,7 @@ fishTypeDropdown.addEventListener("change", clickEvent => {
         
     }
 })
+
 
 
 // function to show all types of fish

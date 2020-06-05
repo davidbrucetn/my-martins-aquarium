@@ -32,15 +32,32 @@ html {
     display: flex;
     flex-direction: column;
     flex: 3.5;
-   
-    
 }
 
 .underTheBanner__right {
     flex: 1;
 }
 
+.page__img__right {
+    
+    
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 20% 100%;
+
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
+    margin-top: 2em;
 }
+
+.typeChoice, .toggleTips, .toggleFish, .toggleLocations {
+    border-radius: 5em;
+    box-sizing: border-box;
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    background-color: lavender ;
+}
+
