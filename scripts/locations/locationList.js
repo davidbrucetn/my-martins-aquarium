@@ -2,9 +2,20 @@
 const locationVisibilityButton = document.querySelector(".toggleLocations")
 
 locationVisibilityButton.addEventListener("click", clickEvent => {
-    //const locationListArticle =  document.querySelector(".toggleLocations")
-    //locationListArticle.classList.toggle("hidden")
-    document.querySelector(".locationList").classList.toggle("hidden")
+
+    // find location article element with class locationList
+    const locationListArticle =  document.querySelector(".locationList")
+    // point to classes and toggle (add or remove) hidden class for css to make hidden
+    locationListArticle.classList.toggle("hidden")
+    // equate to this ->
+    //document.querySelector(".locationList").classList.toggle("hidden")
+
+    if (document.querySelector(".locationList").classList.contains("hidden")) {
+        document.querySelector(".toggleLocations").innerHTML="Hide Locations"
+        
+    } else {
+        document.querySelector(".toggleLocations").innerHTML="Show Locations"
+    }
 })
 
 

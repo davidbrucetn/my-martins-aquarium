@@ -1,16 +1,50 @@
 
+// Hide Fish Completely
+//   set button object for selector with class toggleFish
+const fishVisibilityButton = document.querySelector(".toggleFish")
+
+// Listen for click on button 
+fishVisibilityButton.addEventListener("click", clickEvent => {
+    // if clicked add class hidden and CSS will hide button because of "hidden" class
+    document.querySelector(".fishList").classList.toggle("hidden");
+    if (document.querySelector(".fishList").classList.contains("hidden")) {
+        document.querySelector(".toggleFish").innerHTML="Hide Fish"
+        
+    } else {
+        document.querySelector(".toggleFish").innerHTML="Show Fish"
+    }
+})
+
+
+//----------------------------------------------------->
+const [red, green, blue] = [186,85,211]
+const section1 = document.querySelector('.fishList')
+
+window.addEventListener('scroll', () => {
+  let y = 1 + (window.scrollY || window.pageYOffset) / 1500
+  y = y < 1 ? 1 : y // ensure y is always >= 1 (due to Safari's elastic scroll)
+  const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
+  section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
+})
+//-----------------------------------------------------<
 
  // Clear innerHTML for article
+// set var for select button with class typeChoice
 const fishTypeDropdown = document.querySelector(".typeChoice")
 
+// set element target for class fishList
 const contentTarget = document.querySelector(".fishList")
+
+// declare function to clear innerHTML from fishList article
 const clearFishList = () => contentTarget.innerHTML = ""
 
 //listening for browser-generated even of "change", clickEvent.target ->what user selected
 
 fishTypeDropdown.addEventListener("change", clickEvent => {
+
     // Get the value of the option chosen by the user
     const userChoice = clickEvent.target.value
+    
     // If the user chose all, clear the list and only show all fish
     if (userChoice === "all") {
         clearFishList()
@@ -21,46 +55,38 @@ fishTypeDropdown.addEventListener("change", clickEvent => {
     if (userChoice === "holy") {
         clearFishList()
         //showHolyFish()
-        displayHolyFish();
+        displayCertainFish(userChoice);
     }
-    // If the user chose soldier, clear the list and only show soldier fish
+    // If the user chose Soldier, clear the list and only show soldier fish
     if (userChoice === "soldier") {
         clearFishList()
         //showHolyFish()
-        displaySoldierFish();
+        displayCertainFish(userChoice);
     }
     // If the user chose Common, clear the list and only show common fish
-    if (userChoice === "plebs") {
+    if (userChoice === "common") {
         clearFishList()
-        //showHolyFish()
-        displayCommonFish();
+        displayCertainFish(userChoice);
+        
     }
 })
 
+
+// function to show all types of fish
 const fishList = () => {
     
-    displayHolyFish();
-    
-    displaySoldierFish();
+    const fishTypes = ["holy","soldier","common"]
+    let fishTypeArray = []
 
-    displayCommonFish();
-    
+    for (const fishType of fishTypes) {
+        fishTypeArray = geFilterFish(fishType);
+        displayFish(fishTypeArray,fishType);
+    }
 }
 
-
-displayHolyFish = () => {
-    const holy = geFilterFish("holy")
-    displayFish(holy,"holy");
-}
-
-displaySoldierFish = () => {
-    const soldier = geFilterFish("soldier")
-    displayFish(soldier,"soldier");
-}
-
-displayCommonFish = () => {
-    const common = geFilterFish("common");
-    displayFish(common,"common");
+const displayCertainFish = (rank) => {
+    const fishTypeArray = geFilterFish(rank)
+    displayFish(fishTypeArray,rank)
 }
 
 const displayFish = (fishObjectsArray,rank) => {
