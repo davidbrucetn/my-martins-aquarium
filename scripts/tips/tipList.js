@@ -1,3 +1,9 @@
+const tipVisibilityButton = document.querySelector(".toggleTips")
+
+tipVisibilityButton.addEventListener("click", clickEvent => {
+    document.querySelector(".tipList").classList.toggle("hidden")
+})
+
 // convert tip object to HTML List of Sections
 
 const tipList = () => {

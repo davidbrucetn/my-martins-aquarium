@@ -1,87 +1,138 @@
 {
-  "fish": [{
+  "fish": [
+    {
+      "id": 1,
       "name": "Bart",
       "food": "algae",
       "species": "Guppy",
       "length": 3,
       "location": "Caribbean",
       "picture": "https://www.fishkeepingworld.com/wp-content/uploads/2018/02/Guppy.jpg"
-
-  },
-  {
+    },
+    {
+      "id": 2,
       "name": "Allison",
       "food": "Brine Shrimp",
       "species": "Angelfish",
       "length": 6,
       "location": "South America",
       "picture": "https://www.fishkeepingworld.com/wp-content/uploads/2018/02/Angelfish-New.jpg"
-
-  },
-  {
+    },
+    {
+      "id": 3,
       "name": "Porthos",
       "food": "Mackerel",
       "species": "Swordfish",
       "length": 150,
       "location": "Atlantic, Pacific, Indian Oceans - Tropical",
       "picture": "https://static01.nyt.com/images/2016/07/09/science/12SWORDFISH/12SWORDFISH-facebookJumbo.jpg"
-
-  },
-  {
+    },
+    {
+      "id": 4,
       "name": "Nancy",
       "food": "Bloodworms",
       "species": "Neon Tetra",
       "length": 3,
       "location": "Amazon Basin",
       "picture": "https://www.fishkeepingworld.com/wp-content/uploads/2018/02/Neon-Tetra-New.jpg"
-
-  },
-  {
+    },
+    {
+      "id": 5,
       "name": "Maggy",
       "food": "Brine Shrimp",
       "species": "Mollie",
       "length": 4,
       "location": "Tropical Estuaries",
       "picture": "https://www.fishkeepingworld.com/wp-content/uploads/2018/02/Black-Mollies-1.jpg"
-
-  },
-  {
+    },
+    {
+      "id": 6,
       "name": "Plato",
       "food": "Fruit Flies",
       "species": "Platy",
-      "length": 3,
+      "length": 4,
       "location": "South America",
       "picture": "https://www.fishkeepingworld.com/wp-content/uploads/2018/02/Sunburst-Platy.jpg"
-
-  },
-  {
+    },
+    {
+      "id": 7,
       "name": "Aramis",
       "food": "Mackerel",
       "species": "Swordfish",
       "length": 155,
       "location": "Atlantic, Pacific, Indian Oceans - Tropical",
       "picture": "https://static01.nyt.com/images/2016/07/09/science/12SWORDFISH/12SWORDFISH-facebookJumbo.jpg"
-
-  },
-  {
+    },
+    {
+      "id": 8,
       "name": "Delia",
       "food": "Bloodworms",
       "species": "Zebra Danios",
       "length": 1.75,
       "location": "Myanmar",
       "picture": "https://www.fishkeepingworld.com/wp-content/uploads/2018/02/Zebra-Danio.jpg"
-
-  },
-  {
+    },
+    {
+      "id": 9,
       "name": "D'Artagnan",
       "food": "Mackerel",
       "species": "Swordfish",
       "length": 250,
       "location": "Atlantic, Pacific, Indian Oceans - Tropical",
       "picture": "https://static01.nyt.com/images/2016/07/09/science/12SWORDFISH/12SWORDFISH-facebookJumbo.jpg"
-
-  }
-],
-  "location": [],
-  "tips": [],
+    },
+    {
+      "id": 10,
+      "name": "Allison",
+      "food": "Brine Shrimp",
+      "species": "Angelfish",
+      "length": 6,
+      "location": "South America",
+      "picture": "https://www.fishkeepingworld.com/wp-content/uploads/2018/02/Angelfish-New.jpg"
+    },
+    {
+      "name": "Test",
+      "food": "Brine Shrimp",
+      "species": "Angelfish",
+      "length": 6,
+      "location": "South America",
+      "picture": "https://www.fishkeepingworld.com/wp-content/uploads/2018/02/Angelfish-New.jpg",
+      "id": 11
+    }
+  ],
+  "location": [
+    {
+      "id": 1,
+      "name": "Amazon Basin",
+      "description": "The Amazon Basin is an unquestionable biodiversity hotspot, containing the highest freshwater biodiversity on earth and facing off a recent increase in anthropogenic threats.",
+      "picture": "https://cdn.climatechangenews.com/files/2014/12/rainforest.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Central America",
+      "description": "The Central America region is home to many popular aquarium fish. The best-known case include the viviparous swordtails as Molly, swordtails, Platys or Segelkärpflinge.",
+      "picture": "https://geology.com/world/satellite-image-of-central-america.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Caribbean",
+      "description": "Native freshwater fish assemblages of tropical and subtropical islands are dominated by species that migrate between freshwater and marine ecosystems and depend of the connectivity between riverine, estuarine and marine environments to complete their life cycles. These species are widespread throughout the Caribbean on islands and continental coasts because ocean currents scatter their larvae between nearby islands.",
+      "picture": "https://caribbeannewsservice.com/now/wp-content/uploads/2017/05/Caribbean-Sea.jpg"
+    }
+  ],
+  "tips": [
+    {
+      "id": 1,
+      "tip": "Your aquarium will need regular cleaning eventually, but not right away. It’s best to allow it to settle in and find its balance during the first few weeks."
+    },
+    {
+      "id": 2,
+      "tip": "Remember that an aquarium is a living system, and it takes time to establish the balance that will keep its inhabitants thriving."
+    },
+    {
+      "id": 3,
+      "tip": "Put your aquarium light on a regular on/off cycle to give your fish some down-time and prevent unsightly algae growth."
+    }
+  ],
   "quotes": []
 }
