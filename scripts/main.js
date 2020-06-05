@@ -27,3 +27,4 @@ getTipData().then(
         tipList();
     }
 )
+
