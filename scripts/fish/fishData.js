@@ -6,15 +6,6 @@
  */
 let fishCollection = []
 
-/*
-const getFishData = () => {
-    return fetch("http://localhost:8088/fish").then(
-        () => {
-
-        }
-    )
-}
-*/
 // fetch pulls into reponse
 const getFishData = () => {
     return fetch("http://localhost:8088/fish").then(

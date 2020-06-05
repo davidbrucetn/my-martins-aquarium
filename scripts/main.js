@@ -6,6 +6,7 @@ quoteList()
 // build fish html sections
 getFishData().then(
     () => {
+        debugger
         fishList()
         //console.log(`before ${fishCollection}`)
     }
